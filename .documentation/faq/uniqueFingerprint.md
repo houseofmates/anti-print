@@ -1,6 +1,6 @@
 Page X claims my fingerprint is unique.
 ------
-Having a unique fingerprint is fine as long as it changes. With the default settings of anti-print the fingerprint should change all the time. But also with other settings (e.g. the stealth preset) that do not change the fingerprint all the time the fingerprint should be unique per domain and therefore prevent tracking. To test this you can check the different fingerprints on [antiprint.kkapsner.de](https://antiprint.kkapsner.de/test/) and [anti-print2.kkapsner.de](https://anti-print2.kkapsner.de/test/).
+Having a unique fingerprint is fine as long as it changes. With the default settings of anti-print the fingerprint should change all the time. But also with other settings (e.g. the stealth preset) that do not change the fingerprint all the time the fingerprint should be unique per domain and therefore prevent tracking. To test this you can check the different fingerprints on [antiprint.kkapsner.de](https://antiprint.kkapsner.de/test/) and [antiprint2.kkapsner.de](https://antiprint2.kkapsner.de/test/).
 
 My fingerprint does not change when I reload page X.
 ------

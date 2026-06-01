@@ -88,7 +88,6 @@ async function run(){
 		manifest.name = "anti-print";
 		["gecko", "gecko_android"].forEach(function(browserType){
 			if (!manifest.browser_specific_settings[browserType]) return;
-			manifest.browser_specific_settings[browserType].id = "antiprint.kkapsner.de";
 			delete manifest.browser_specific_settings[browserType].update_url;
 		});
 	}

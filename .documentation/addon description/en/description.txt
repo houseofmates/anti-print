@@ -37,7 +37,7 @@ More information on fingerprinting can be found at:
 
 The different block modes are:
 	<ul>
-		<li> fake: anti-print's default setting, and my favorite! All websites not on the white list or black list can use the protected APIs. But values obtained by the APIs are altered so that a consistent fingerprinting is not possible</li>
+		<li> fake: anti-print's default setting, and my favorite! All websites not on the white list or black list can use the protected APIs. But values obtained by the APIs are altered so that consistent fingerprinting is not possible</li>
 		<li> ask for permission: If a website is not listed on the white list or black list, the user will be asked if the website should be allowed to use the protected APIs each time they are called.</li>
 		<li> block everything: Ignore all lists and block the protected APIs on all websites.</li>
 		<li> allow only white list: Only websites in the white list are allowed to use the protected APIs.</li>

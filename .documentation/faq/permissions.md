@@ -1,6 +1,6 @@
 Why does anti-print need permission X?
 ------
-Here is the list of permission that anti-print needs and the reason why it's needed:
+Here is the list of permissions that anti-print needs and the reason why they're needed:
 
  * <all_urls> and tabs: anti-print needs to be able to interact with all possible urls and tabs as fingerprinting attempts could be done everywhere.
  * storage: to store the settings the storage.local API is used.

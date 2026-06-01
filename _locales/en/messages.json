@@ -1608,7 +1608,7 @@
     "description": ""
   },
   "whitelist_inspection_description": {
-    "message": "this shows which fingerprint protections are active for specified sites.{newline}{newline}unchecked means that the site can use that particular function in an unaltered manner. this includes it could use it to (partially) fingerprint your browser.{newline}checked means that anti-print provides a protection which makes it harder for the site to uniquely identifying you.",
+    "message": "this shows which fingerprint protections are active for specified sites.{newline}{newline}unchecked means that the site can use that particular function in an unaltered manner. this includes it could use it to (partially) fingerprint your browser.{newline}checked means that anti-print provides a protection which makes it harder for the site to uniquely identify you.",
     "description": ""
   },
   "whitelist_all_apis": {
