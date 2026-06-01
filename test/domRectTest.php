@@ -13,7 +13,7 @@
 <ul>
 	<li>all the hashes and numbers should be equal for the getClientRects and getBoundingClientRect tests</li>
 	<li>if "refresh" is clicked the hash must not change</li>
-	<li>upon page reload the hashes change (depending on CanvasBlocker settings - e.g. not in the stealth preset)</li>
+	<li>upon page reload the hashes change (depending on anti-print settings - e.g. not in the stealth preset)</li>
 </ul>
 <h2>Tests</h2>
 <iframe id="iframe" src="domRectIFrame.php"></iframe>

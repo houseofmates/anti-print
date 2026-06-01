@@ -1,5 +1,5 @@
 {
-  "name": "canvasblocker",
+  "name": "anti-print",
   "version": "0.5.15",
   "description": "WebExtension that alters some JS APIs to prevent fingerprinting.",
   "directories": {

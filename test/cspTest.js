@@ -11,7 +11,7 @@ const addLine = function(){
 }();
 
 addLine("window name at start: " + window.name);
-window.name = "CanvasBlocker CSP test";
+window.name = "anti-print CSP test";
 addLine("window name after set: " + window.name);
 (async function(){
 	"use strict";

@@ -36,7 +36,7 @@
 			logging.notice("empty storage");
 			settings.persistentRndStorage = "";
 			logging.notice("send message to main script");
-			extension.message.send({"canvasBlocker-clear-domain-rnd": "force"});
+			extension.message.send({"antiprint-clear-domain-rnd": "force"});
 		},
 		clearPersistentRndForContainer: async function(){
 			const identities = await browser.contextualIdentities.query({});
@@ -49,7 +49,7 @@
 					};
 				})
 			);
-			extension.message.send({"canvasBlocker-clear-container-rnd": identity.cookieStoreId});
+			extension.message.send({"antiprint-clear-container-rnd": identity.cookieStoreId});
 		},
 		inspectSettings: function(){
 			logging.verbose("open settings inspection");
@@ -78,7 +78,7 @@
 				const str = number.toFixed(0);
 				return "0".repeat(digits - str.length) + str;
 			}
-			link.download = "CanvasBlocker-settings_" +
+			link.download = "anti-print-settings_" +
 				format(now.getFullYear(), 4) + "-" +
 				format(now.getMonth() + 1, 2) + "-" +
 				format(now.getDate(), 2) + "_" +

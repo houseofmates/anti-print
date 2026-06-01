@@ -283,7 +283,7 @@ addTest("error provocation 1", function(log){
 	
 	const canvas = document.createElement("canvas");
 	const ctx = canvas.getContext("2d");
-	let canvasBlocker = false;
+	let antiprint = false;
 	try{
 		ctx.getImageData(0, 0, 0, 0);
 	}
@@ -293,10 +293,10 @@ addTest("error provocation 1", function(log){
 			log(error.toString());
 		}
 		catch (error){
-			canvasBlocker = true;
+			antiprint = true;
 		}
 	}
-	return canvasBlocker;
+	return antiprint;
 });
 addTest("error provocation 2", function(log){
 	"use strict";
@@ -304,7 +304,7 @@ addTest("error provocation 2", function(log){
 	const canvas = document.createElement("canvas");
 	canvas.width = 0;
 	const ctx = canvas.getContext("2d");
-	let canvasBlocker = false;
+	let antiprint = false;
 	try{
 		ctx.getImageData(0, 0, 1, 1);
 		log("no error provoked");
@@ -315,15 +315,15 @@ addTest("error provocation 2", function(log){
 			log(error.toString());
 		}
 		catch (error){
-			canvasBlocker = true;
+			antiprint = true;
 		}
 	}
-	return canvasBlocker;
+	return antiprint;
 });
 addTest("error provocation 3", function(log){
 	"use strict";
 	
-	let canvasBlocker = false;
+	let antiprint = false;
 	try{
 		CanvasRenderingContext2D.prototype.getImageData.apply(undefined, [0, 0, 1, 1]);
 	}
@@ -333,15 +333,15 @@ addTest("error provocation 3", function(log){
 			log(error.toString());
 		}
 		catch (error){
-			canvasBlocker = true;
+			antiprint = true;
 		}
 	}
-	return canvasBlocker;
+	return antiprint;
 });
 addTest("error properties", function(log){
 	"use strict";
 	
-	let canvasBlocker = false;
+	let antiprint = false;
 	try{
 		CanvasRenderingContext2D.prototype.getImageData.apply(undefined, [0, 0, 1, 1]);
 	}
@@ -350,25 +350,25 @@ addTest("error properties", function(log){
 			const name = "TypeError";
 			if (error.name !== name && error instanceof TypeError){
 				log("Error name wrong. Expected: ", name, "- got:", error.name);
-				canvasBlocker = true;
+				antiprint = true;
 			}
 			const start = "@" + location.href.replace(/\.html$/, ".js");
 			if (!error.stack.startsWith(start)){
 				log("Error stack starts wrong. Expected:", start, "- got :", error.stack.split(/\n/g, 2)[0]);
-				canvasBlocker = true;
+				antiprint = true;
 			}
 			const message = "'getImageData' called on an object that " +
 				"does not implement interface CanvasRenderingContext2D.";
 			if (error.message !== message){
 				log("Error message wrong. Expected: ", message, "- got:", error.message);
-				canvasBlocker = true;
+				antiprint = true;
 			}
 		}
 		catch (error){
-			canvasBlocker = true;
+			antiprint = true;
 		}
 	}
-	return canvasBlocker;
+	return antiprint;
 });
 function testKnownPixelValue(size, log){
 	"use strict";

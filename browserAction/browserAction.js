@@ -84,7 +84,7 @@
 			label: "faq",
 			icon: extension.getURL("icons/browserAction-faq.svg"),
 			action: function(){
-				browser.tabs.create({url: "https://canvasblocker.kkapsner.de/faq/"});
+				browser.tabs.create({url: "https://antiprint.kkapsner.de/faq/"});
 				window.close();
 			}
 		},
@@ -93,7 +93,7 @@
 			advanced: true,
 			icon: extension.getURL("icons/browserAction-test.svg"),
 			action: function(){
-				browser.tabs.create({url: "https://canvasblocker.kkapsner.de/test"});
+				browser.tabs.create({url: "https://antiprint.kkapsner.de/test"});
 				window.close();
 			}
 		},
@@ -101,7 +101,7 @@
 			label: "review",
 			icon: extension.getURL("icons/browserAction-review.svg"),
 			action: function(){
-				browser.tabs.create({url: "https://addons.mozilla.org/firefox/addon/canvasblocker/reviews/"});
+				browser.tabs.create({url: "https://addons.mozilla.org/firefox/addon/anti-print/reviews/"});
 				window.close();
 			}
 		},
