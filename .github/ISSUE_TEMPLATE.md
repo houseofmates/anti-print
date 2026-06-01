@@ -30,14 +30,14 @@
 
 ## Your Environment
 <!--- Include as many relevant details about the environment you experienced the bug in. -->
-* CanvasBlocker Version used:
+* anti-print Version used:
 * Firefox version incl. 32- or 64-bit:
 * Operating System and version (desktop or mobile):
 * Installed addons:
 
 ## Your Settings
 ~~~ json
-<!--- Copy your CanvasBlocker settings here. -->
+<!--- Copy your anti-print settings here. -->
 <!-- They can be retrieved by checking the expert mode and going to export settings. -->
 <!--- You may consider deleting personal data - especially the "persistentRndStorage". -->
 ~~~

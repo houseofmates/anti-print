@@ -25,7 +25,7 @@ async function addAlphaVersionToUpdatesJSON(version){
 	"use strict";
 	const updatesPath = path.join(versionsPath, "updates.json");
 	const data = JSON.parse(await fs.promises.readFile(updatesPath));
-	const versions = data.addons["CanvasBlocker-Beta@kkapsner.de"].updates;
+	const versions = data.addons["anti-print-Beta@kkapsner.de"].updates;
 	if (versions.some(function(entry){
 		return entry.version === version;
 	})){
@@ -33,7 +33,7 @@ async function addAlphaVersionToUpdatesJSON(version){
 	}
 	versions.push({
 		version,
-		update_link: `https://canvasblocker.kkapsner.de/versions/${getXPIFileName("canvasblocker_beta", version)}`
+		update_link: `https://antiprint.kkapsner.de/versions/${getXPIFileName("anti-print_beta", version)}`
 	});
 	await fs.promises.writeFile(updatesPath, JSON.stringify(data, undefined, "\t"));
 }
@@ -51,12 +51,12 @@ async function getAlphaVersion(manifest){
 		versionParts.pop();
 	}
 	const baseVersion = `${versionParts.join(".")}.${date}`;
-	if (!fs.existsSync(path.join(versionsPath, getXPIFileName("canvasblocker_beta", baseVersion)))){
+	if (!fs.existsSync(path.join(versionsPath, getXPIFileName("anti-print_beta", baseVersion)))){
 		return baseVersion;
 	}
 	
 	let dayTry = 1;
-	while (fs.existsSync(path.join(versionsPath, getXPIFileName("canvasblocker_beta", `${baseVersion}.${dayTry}`)))){
+	while (fs.existsSync(path.join(versionsPath, getXPIFileName("anti-print_beta", `${baseVersion}.${dayTry}`)))){
 		dayTry += 1;
 	}
 	
@@ -78,17 +78,17 @@ async function run(){
 	const oldManifest = await fs.promises.readFile(manifestPath);
 	const manifest = require(manifestPath);
 	if (args.type === "alpha" || args.type === "rc"){
-		manifest.name = "CanvasBlocker-Beta";
+		manifest.name = "anti-print-Beta";
 		["gecko", "gecko_android"].forEach(function(browserType){
 			if (!manifest.browser_specific_settings[browserType]) return;
-			manifest.browser_specific_settings[browserType].id = "CanvasBlocker-Beta@kkapsner.de";
+			manifest.browser_specific_settings[browserType].id = "anti-print-Beta@kkapsner.de";
 		});
 	}
 	else {
-		manifest.name = "CanvasBlocker";
+		manifest.name = "anti-print";
 		["gecko", "gecko_android"].forEach(function(browserType){
 			if (!manifest.browser_specific_settings[browserType]) return;
-			manifest.browser_specific_settings[browserType].id = "CanvasBlocker@kkapsner.de";
+			manifest.browser_specific_settings[browserType].id = "antiprint.kkapsner.de";
 			delete manifest.browser_specific_settings[browserType].update_url;
 		});
 	}

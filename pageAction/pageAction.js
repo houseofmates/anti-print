@@ -241,23 +241,23 @@
 	
 	const tab = tabs[0];
 	extension.message.on(function(data){
-		if (data["canvasBlocker-notificationCounter"]){
+		if (data["antiprint-notificationCounter"]){
 			const url = new URL(data.url);
-			Object.keys(data["canvasBlocker-notificationCounter"]).forEach(function(key){
+			Object.keys(data["antiprint-notificationCounter"]).forEach(function(key){
 				domainNotification(
 					url,
 					key,
-					data["canvasBlocker-notificationCounter"][key].count,
-					data["canvasBlocker-notificationCounter"][key].api
+					data["antiprint-notificationCounter"][key].count,
+					data["antiprint-notificationCounter"][key].api
 				);
 			});
 		}
 		if (
-			Array.isArray(data["canvasBlocker-notifications"]) &&
-			data["canvasBlocker-notifications"].length
+			Array.isArray(data["antiprint-notifications"]) &&
+			data["antiprint-notifications"].length
 		){
 			logging.message("got notifications");
-			const notifications = data["canvasBlocker-notifications"];
+			const notifications = data["antiprint-notifications"];
 			let i = 0;
 			const length = notifications.length;
 			const tick = window.setInterval(function(){
@@ -290,7 +290,7 @@
 	browser.tabs.sendMessage(
 		tab.id,
 		{
-			"canvasBlocker-sendNotifications": tab.id
+			"antiprint-sendNotifications": tab.id
 		}
 	);
 	logging.notice("waiting for notifications");

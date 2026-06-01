@@ -1,6 +1,6 @@
 {
   "addon_title": {
-    "message": "canvasblocker",
+    "message": "anti-print",
     "description": ""
   },
   "addon_description": {
@@ -8,7 +8,7 @@
     "description": ""
   },
   "browserAction_title_default": {
-    "message": "canvasblocker",
+    "message": "anti-print",
     "description": ""
   },
   "browserAction_title_notified": {
@@ -24,11 +24,11 @@
     "description": ""
   },
   "browserAction_status_on": {
-    "message": "canvasblocker on",
+    "message": "anti-print on",
     "description": ""
   },
   "browserAction_status_off": {
-    "message": "canvasblocker off",
+    "message": "anti-print off",
     "description": ""
   },
   "more": {
@@ -72,19 +72,19 @@
     "description": ""
   },
   "options_title": {
-    "message": "canvasblocker settings",
+    "message": "anti-print settings",
     "description": ""
   },
   "optionsIntroduction": {
-    "message": "on this page you can adjust the settings of canvasblocker.",
+    "message": "on this page you can adjust the settings of anti-print.",
     "description": ""
   },
   "installNotice": {
-    "message": "canvasblocker was installed. if you want to be able to access this page in the future, please bookmark it.",
+    "message": "anti-print was installed. if you want to be able to access this page in the future, please bookmark it.",
     "description": ""
   },
   "updateNotice": {
-    "message": "canvasblocker was updated. if you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+    "message": "anti-print was updated. if you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
     "description": ""
   },
   "dontShowOptionsOnUpdate": {
@@ -92,7 +92,7 @@
     "description": ""
   },
   "resistFingerprintingNotice": {
-    "message": "you have privacy.resistfingerprinting enabled. this slightly changes the behaviour of canvasblocker. see further information {link:here:https://github.com/kkapsner/canvasblocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+    "message": "you have privacy.resistfingerprinting enabled. this slightly changes the behaviour of anti-print. see further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
     "description": ""
   },
   "settingsNotice.dom.webAudio.enabled": {
@@ -364,7 +364,7 @@
     "description": ""
   },
   "askOnlyOnce_description": {
-    "message": "when canvasblocker's block mode is set to 'ask permission' or 'ask permission for readout api', a confirm message will appear every time a page tries to access the api or readout api. this setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the api. nevertheless, multiple confirm messages may still be displayed on some pages.\n\nno: asking every time\n\nindividual: each api type (context, input, readout) has to be confirmed separately\n\ncombined: all api types get confirmed together",
+    "message": "when anti-print's block mode is set to 'ask permission' or 'ask permission for readout api', a confirm message will appear every time a page tries to access the api or readout api. this setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the api. nevertheless, multiple confirm messages may still be displayed on some pages.\n\nno: asking every time\n\nindividual: each api type (context, input, readout) has to be confirmed separately\n\ncombined: all api types get confirmed together",
     "description": ""
   },
   "askOnlyOnce_options.no": {
@@ -712,7 +712,7 @@
     "description": ""
   },
   "preBlock": {
-    "message": "api blocked on {url} because canvasblocker settings were not loaded in time.",
+    "message": "api blocked on {url} because anti-print settings were not loaded in time.",
     "description": ""
   },
   "blocked": {
@@ -1240,7 +1240,7 @@
     "description": ""
   },
   "navigatorSettings_title": {
-    "message": "canvasblocker navigator settings",
+    "message": "anti-print navigator settings",
     "description": ""
   },
   "navigatorSettings_description": {
@@ -1396,7 +1396,7 @@
     "description": ""
   },
   "exportSettings_title": {
-    "message": "canvasblocker settings export",
+    "message": "anti-print settings export",
     "description": ""
   },
   "exportSettings_description": {
@@ -1424,7 +1424,7 @@
     "description": ""
   },
   "openSettingPresets_description": {
-    "message": "this opens the preset page that was shown upon installation. the presets are collections of setting values for some common use cases of canvasblocker.",
+    "message": "this opens the preset page that was shown upon installation. the presets are collections of setting values for some common use cases of anti-print.",
     "description": ""
   },
   "openSettingPresets_label": {
@@ -1484,7 +1484,7 @@
     "description": ""
   },
   "sanitation_description": {
-    "message": "this page helps to find misconfigurations in the canvasblocker settings. it also gives advice on suboptimal settings. but it is not recommended to blindly correct all suggestions.",
+    "message": "this page helps to find misconfigurations in the anti-print settings. it also gives advice on suboptimal settings. but it is not recommended to blindly correct all suggestions.",
     "description": ""
   },
   "sanitation_nothingToComplain": {
@@ -1604,11 +1604,11 @@
     "description": ""
   },
   "whitelist_inspection_title": {
-    "message": "canvasblocker whitelist inspection",
+    "message": "anti-print whitelist inspection",
     "description": ""
   },
   "whitelist_inspection_description": {
-    "message": "this shows which fingerprint protections are active for specified sites.{newline}{newline}unchecked means that the site can use that particular function in an unaltered manner. this includes it could use it to (partially) fingerprint your browser.{newline}checked means that canvasblocker provides a protection which makes it harder for the site to uniquely identifying you.",
+    "message": "this shows which fingerprint protections are active for specified sites.{newline}{newline}unchecked means that the site can use that particular function in an unaltered manner. this includes it could use it to (partially) fingerprint your browser.{newline}checked means that anti-print provides a protection which makes it harder for the site to uniquely identifying you.",
     "description": ""
   },
   "whitelist_all_apis": {
@@ -1620,11 +1620,11 @@
     "description": ""
   },
   "presets_title": {
-    "message": "canvasblocker presets",
+    "message": "anti-print presets",
     "description": ""
   },
   "presets_installNotice": {
-    "message": "{image:../icons/icon.svg}thanks for installing canvasblocker. to adjust it to your needs you can apply some presets. for further customization you can open the {link:options:options.html} page. there you can also open this preset page later.",
+    "message": "{image:../icons/icon.svg}thanks for installing anti-print. to adjust it to your needs you can apply some presets. for further customization you can open the {link:options:options.html} page. there you can also open this preset page later.",
     "description": ""
   },
   "presets_introduction": {
@@ -1652,7 +1652,7 @@
     "description": ""
   },
   "preset_stealth_description": {
-    "message": "configures canvasblocker to be hard to detect. this might lead to high cpu usage and might slow down the browser.",
+    "message": "configures anti-print to be hard to detect. this might lead to high cpu usage and might slow down the browser.",
     "description": ""
   },
   "preset_max_protection_title": {
@@ -1660,7 +1660,7 @@
     "description": ""
   },
   "preset_max_protection_description": {
-    "message": "maximizes the protection against fingerprint extraction. these settings will break some pages, might slow down the browser a little bit and might enable sites to detect that canvasblocker is used. after applying this preset you should consider applying the recaptcha preset as well.",
+    "message": "maximizes the protection against fingerprint extraction. these settings will break some pages, might slow down the browser a little bit and might enable sites to detect that anti-print is used. after applying this preset you should consider applying the recaptcha preset as well.",
     "description": ""
   },
   "preset_recaptcha_title": {

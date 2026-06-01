@@ -2,12 +2,12 @@
 <html>
 	<head>
 		<title>
-			CanvasBlocker FAQs
+			anti-print FAQs
 		</title>
 		<link rel="stylesheet" href="../default.css" type="text/css">
 	</head>
 	<body>
-		<header><h1>CanvasBlocker FAQs</h1></header>
+		<header><h1>anti-print FAQs</h1></header>
 		<?php
 		include_once("../../kamiKatze/autoload.php");
 		$parser = new MarkdownParser();

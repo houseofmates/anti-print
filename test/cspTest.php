@@ -23,7 +23,7 @@ else {
 <h2>Expected result</h2>
 <ul>
 	<li>if the window API protection is active the window name at start is always empty</li>
-	<li>the canvas hash changes upon reload (depending on CanvasBlocker settings - e.g. not in the stealth preset)</li>
+	<li>the canvas hash changes upon reload (depending on anti-print settings - e.g. not in the stealth preset)</li>
 	<li>there is no line saying "THIS SHOULD NOT BE VISIBLE!" when reloading with <a id="reloadWith304" href="">this</a> link</li>
 </ul>
 <h2>Tests</h2>

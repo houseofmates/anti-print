@@ -148,7 +148,7 @@ Version 1.6:
 		- if the current block mode is set to blocking you can chose between faking and allowing if you whitelist an URL
 	
 	fixes:
-		- fix message canvasBlocker-unload
+		- fix message antiprint-unload
 		- convenience preset did not work properly
 		- random supply was not set properly on a fresh new tab
 	
